@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -310,24 +310,63 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Contact Us</h2>
+      <section class="section-contacts section">
+        <div class="container">
+          <h2 class="contact-title">Contact Us</h2>
 
-        <p>
-          Please use the form below to contact us. Enter your name, email,
-          phone, and message and we'll get back to you shortly.
-        </p>
+          <div class="contact-inner">
+            <div class="contact-form-wrapper">
+              <p class="contact-form-text">
+                Please use the form below to contact us. Enter your name, email,
+                phone, and message and we'll get back to you shortly.
+              </p>
 
-        <form>
-          <button type="submit">Send</button>
-        </form>
+              <form class="contact-form">
+                <input
+                  class="contact-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  aria-label="Name"
+                  required
+                />
+                <input
+                  class="contact-input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  aria-label="Email"
+                  required
+                />
+                <input
+                  class="contact-input"
+                  type="tel"
+                  name="phone"
+                  placeholder="+380"
+                  aria-label="Phone"
+                  required
+                />
+                <textarea
+                  class="contact-comment"
+                  name="comment"
+                  aria-label="Comment"
+                  placeholder="Comment"
+                ></textarea>
+                <button class="contact-btn" type="submit">Send</button>
+              </form>
+            </div>
 
-        <img
-          src="./images/contact-us.jpg"
-          alt="watch"
-          width="530"
-          height="556"
-        />
+            <div class="contact-img-wrapper">
+              <img
+                src="./images/contact-us.jpg"
+                alt="watch"
+                width="530"
+                height="556"
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer id="bottom">
